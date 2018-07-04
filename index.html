@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="validar.js"></script>
+</head>
+<body>
+    
+    <h1>Formulario de registro</h1>
+    <form action="registrar.php" method="post" class="form-register" onsubmit="return validar();">
+        <h2 class="form__titulo">CREA UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+           <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" >
+           <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" >
+           <input type="text" id="correo" name="correo" placeholder="Correo" class="input-100" >
+           <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" >
+           <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" >
+           <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-100" >
+            <input type="submit" src="cargalogs.html" value="enviar" class="btn-enviar"> 
+            
+            <p>¿Se ha olvidado la clave?<a href="recuperarclave.php">Ingresa Aqui</a></p> <br>
+          <p> si ya tienes una cuenta haz click aquí<a href="login.php">Login</a></p>
+        </div>
+    </form>
+</body>
+</html>
